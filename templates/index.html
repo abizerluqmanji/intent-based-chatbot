@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Intent-Based AI Chatbot</title>
+</head>
+
+<body>
+    <h1>Chat with the Bot</h1>
+    <input type="text" id="userInput" placeholder="Type your message here">
+    <button onclick="sendMessage()">Send</button>
+    <div id="chatbox"></div>
+
+    <script>
+        function sendMessage() {
+            const message = document.getElementById('userInput').value;
+            fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const chatbox = document.getElementById('chatbox');
+                    chatbox.innerHTML += `<p><strong>Bot:</strong> ${data.response}</p>`;
+                });
+        }
+    </script>
+</body>
+
+</html>
