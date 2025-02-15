@@ -6,19 +6,22 @@
                 "Hi",
                 "Hello",
                 "How are you?",
-                "Good morning"
+                "Good morning",
+                "Good afternoon",
+                "Hey",
+                "What's up?"
             ],
             "responses": [
-                "Hello!",
-                "Hi there!",
-                "How can I help you?"
+                "Hello there!"
             ]
         },
         {
             "tag": "hours",
             "patterns": [
                 "What are your hours?",
-                "When are you open?"
+                "When are you open?",
+                "What time do you open?",
+                "What time do you close?"
             ],
             "responses": [
                 "We are open from 9 AM to 9 PM."
@@ -29,11 +32,37 @@
             "patterns": [
                 "Bye",
                 "See you later",
-                "Goodbye"
+                "Goodbye",
+                "Catch you later",
+                "See you soon"
             ],
             "responses": [
-                "Goodbye!",
-                "Have a great day!"
+                "Goodbye!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thanks a lot",
+                "Thank you very much",
+                "I appreciate it"
+            ],
+            "responses": [
+                "You're welcome!"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "Can you help me?",
+                "I need assistance",
+                "Can you assist me?",
+                "I need help"
+            ],
+            "responses": [
+                "Sure, how can I help you?"
             ]
         }
     ]
